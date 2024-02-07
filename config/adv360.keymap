@@ -53,9 +53,17 @@
         slack_paste_snippet: slack_paste_snippet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LG(LS(ENTER))>;
+            bindings = <&macro_press>, <&kp LG(LS(ENTER))>, <&macro_release>;
 
             label = "SLACK_PASTE_SNIPPET";
+        };
+
+        vscode_commandpallete: vscode_commandpallete {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LG(LS(P))>, <&macro_release>;
+
+            label = "VSCODE_COMMANDPALLETE";
         };
     };
 
@@ -104,11 +112,11 @@
 
         BI_MACRO {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans               &trans  &trans  &trans  &trans                &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans               &trans  &trans  &trans  &slack_paste_snippet  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &vscode_newterminal  &trans  &trans  &trans  &trans                &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans               &trans  &trans  &trans  &trans                &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                       &trans  &trans  &trans  &trans                &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans  &trans  &trans  &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &trans  &trans  &trans  &vscode_commandpallete  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &vscode_newterminal   &trans  &trans  &trans  &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans                &trans  &trans  &trans  &trans                  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans  &trans  &trans  &trans                  &trans
             >;
         };
     };
