@@ -65,6 +65,38 @@
 
             label = "VSCODE_COMMANDPALLETE";
         };
+
+        intellij_collapse_all: intellij_collapse_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LS(LG(MINUS))>, <&macro_release>;
+
+            label = "INTELLIJ_COLLAPSE_ALL";
+        };
+
+        intellij_last_edit: intellij_last_edit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LS(LG(BACKSPACE))>;
+
+            label = "INTELLIJ_LAST_EDIT";
+        };
+
+        google_doc_heading: google_doc_heading {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LA(LC(NUMBER_2))>, <&macro_release>;
+
+            label = "GOOGLE_DOC_HEADING";
+        };
+
+        intellij_rename: intellij_rename {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LS(F6)>, <&macro_release>;
+
+            label = "INTELLIJ_RENAME";
+        };
     };
 
     keymap {
@@ -112,11 +144,11 @@
 
         BI_MACRO {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans  &trans  &trans  &trans                  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &trans  &trans  &trans  &vscode_commandpallete  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &vscode_newterminal   &trans  &trans  &trans  &trans                  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans                &trans  &trans  &trans  &trans                  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans  &trans  &trans  &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans  &trans                  &trans               &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &trans  &trans                  &trans               &vscode_commandpallete  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &google_doc_heading   &trans  &intellij_collapse_all  &intellij_last_edit  &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &vscode_newterminal   &trans  &trans                  &trans               &trans                  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans  &trans                  &trans               &trans                  &trans
             >;
         };
     };
