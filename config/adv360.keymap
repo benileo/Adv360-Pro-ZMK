@@ -143,11 +143,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                        &mo 3          &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &kp LC(UP_ARROW)                                                              &kp LG(TAB)    &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp LC(LEFT)      &kp LGUI     &kp LALT           &kp RCTRL  &kp RGUI         &kp LC(RIGHT)  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                  &kp LG(LEFT)       &kp PG_UP                                  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp Z
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC          &lt 4 ENTER  &kp LG(RIGHT)      &kp PG_DN  &kp RIGHT_SHIFT  &lt 2 SPACE            &kp UP  &kp DOWN   &kp Z    &kp Z     &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                            &mo 3          &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &kp LC(UP_ARROW)                                                                  &kp LG(TAB)    &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp LC(LEFT)      &kp LGUI     &kp LALT               &kp RCTRL  &kp RGUI         &kp LC(RIGHT)  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                  &mt HOME LG(LEFT)      &kp PG_UP                                  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp Z
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC          &lt 4 ENTER  &mt END LG(RIGHT)      &kp PG_DN  &kp RIGHT_SHIFT  &lt 2 SPACE            &kp UP  &kp DOWN   &kp Z    &kp Z     &mo 2
             >;
         };
 
@@ -183,11 +183,11 @@
 
         BI_MACRO {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans  &trans                  &trans               &trans                  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &trans  &trans                  &trans               &vscode_commandpallete  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &google_doc_heading   &trans  &intellij_collapse_all  &intellij_last_edit  &trans                  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &vscode_newterminal   &trans  &trans                  &trans               &trans                  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans  &trans                  &trans               &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans          &trans            &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &trans          &trans            &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &google_doc_heading   &vscode_unfold  &vs_code_foldall  &vscode_last_edit  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &vscode_newterminal   &trans          &trans            &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans          &trans            &trans             &trans  &trans
             >;
         };
     };
