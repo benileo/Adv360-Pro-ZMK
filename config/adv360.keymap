@@ -97,6 +97,45 @@
 
             label = "INTELLIJ_RENAME";
         };
+
+        vs_code_foldall: vs_code_foldall {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LG(K)>,
+                <&macro_release>,
+                <&macro_press>,
+                <&kp LG(N0)>,
+                <&macro_release>;
+
+            label = "VS_CODE_FOLDALL";
+        };
+
+        vscode_unfold: vscode_unfold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LG(RIGHT_BRACKET)>,
+                <&macro_release>;
+
+            label = "VSCODE_UNFOLD";
+        };
+
+        vscode_last_edit: vscode_last_edit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LG(K)>,
+                <&macro_release>,
+                <&macro_press>,
+                <&kp LG(Q)>,
+                <&macro_release>;
+
+            label = "VSCODE_LAST_EDIT";
+        };
     };
 
     keymap {
