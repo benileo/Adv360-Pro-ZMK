@@ -77,7 +77,13 @@
         vscode_unfold: vscode_unfold {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_ALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LGUI>,
+                <&macro_tap>,
+                <&kp RIGHT_BRACKET>,
+                <&macro_release>,
+                <&kp LEFT_ALT &kp LGUI>;
 
             label = "VSCODE_UNFOLD";
         };
