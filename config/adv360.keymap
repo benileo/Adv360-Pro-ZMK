@@ -53,49 +53,17 @@
         slack_paste_snippet: slack_paste_snippet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LG(LS(ENTER))>, <&macro_release>;
+            bindings = <&macro_tap>, <&kp LG(LS(ENTER))>;
 
             label = "SLACK_PASTE_SNIPPET";
-        };
-
-        vscode_commandpallete: vscode_commandpallete {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LG(LS(P))>, <&macro_release>;
-
-            label = "VSCODE_COMMANDPALLETE";
-        };
-
-        intellij_collapse_all: intellij_collapse_all {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LS(LG(MINUS))>, <&macro_release>;
-
-            label = "INTELLIJ_COLLAPSE_ALL";
-        };
-
-        intellij_last_edit: intellij_last_edit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LS(LG(BACKSPACE))>;
-
-            label = "INTELLIJ_LAST_EDIT";
         };
 
         google_doc_heading: google_doc_heading {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LA(LC(NUMBER_2))>, <&macro_release>;
+            bindings = <&macro_tap>, <&kp LA(LC(NUMBER_2))>;
 
             label = "GOOGLE_DOC_HEADING";
-        };
-
-        intellij_rename: intellij_rename {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LS(F6)>, <&macro_release>;
-
-            label = "INTELLIJ_RENAME";
         };
 
         vs_code_foldall: vs_code_foldall {
@@ -109,10 +77,7 @@
         vscode_unfold: vscode_unfold {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT &kp LG(RIGHT_BRACKET)>,
-                <&macro_release>;
+            bindings = <&macro_press>, <&kp LEFT_ALT>;
 
             label = "VSCODE_UNFOLD";
         };
