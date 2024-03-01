@@ -61,7 +61,7 @@
         google_doc_heading: google_doc_heading {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LA(LC(NUMBER_2))>;
+            bindings = <&macro_tap>, <&kp LA(LG(NUMBER_2))>;
 
             label = "GOOGLE_DOC_HEADING";
         };
@@ -94,6 +94,14 @@
             bindings = <&macro_tap>, <&kp LG(K) &kp LG(Q)>;
 
             label = "VSCODE_LAST_EDIT";
+        };
+
+        vscode_unfold_recurse: vscode_unfold_recurse {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LG(K) &kp LG(RIGHT_BRACKET)>;
+
+            label = "VSCODE_UNFOLD_RECURSE";
         };
     };
 
