@@ -61,7 +61,13 @@
         google_doc_heading: google_doc_heading {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LA(LG(NUMBER_2))>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LALT>,
+                <&macro_tap>,
+                <&kp NUMBER_2>,
+                <&macro_release>,
+                <&kp LCMD &kp LALT>;
 
             label = "GOOGLE_DOC_HEADING";
         };
@@ -103,6 +109,14 @@
 
             label = "VSCODE_UNFOLD_RECURSE";
         };
+
+        vscode_unfoldall: vscode_unfoldall {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LG(K) &kp LG(J)>;
+
+            label = "VSCODE_UNFOLDALL";
+        };
     };
 
     keymap {
@@ -110,7 +124,7 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                                &mo 3          &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp Z      &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                                &mo 3          &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp Z
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &kp LC(UP_ARROW)                                                                      &kp LG(TAB)    &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp LC(LEFT)      &kp LGUI     &kp LALT               &kp RCTRL      &kp RGUI         &kp LC(RIGHT)  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                  &mt HOME LG(LEFT)      &lt 4 PAGE_UP                                  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp Z
@@ -150,11 +164,11 @@
 
         BI_MACRO {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans          &trans            &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &trans          &trans            &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &google_doc_heading   &vscode_unfold  &vs_code_foldall  &vscode_last_edit  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &vscode_newterminal   &trans          &trans            &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans          &trans            &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans                  &trans            &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &vscode_unfold_recurse  &trans            &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &google_doc_heading   &vscode_unfold          &vs_code_foldall  &vscode_last_edit  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &vscode_newterminal   &trans                  &trans            &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans                  &trans            &trans             &trans  &trans
             >;
         };
     };
