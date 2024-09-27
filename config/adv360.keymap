@@ -125,7 +125,7 @@
                 <&macro_press>,
                 <&kp LSHFT &kp LGUI>,
                 <&macro_tap>,
-                <&kp N5>,
+                <&kp NUMBER_4>,
                 <&macro_release>,
                 <&kp LSHIFT &kp LGUI>;
 
@@ -188,8 +188,8 @@
             bindings = <
 &kp F1  &kp F2            &kp F3             &kp F4          &kp F5           &kp F6        &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QUESTION  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &kp MINUS         &kp SLASH          &kp DELETE      &kp POUND        &kp AT        &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &kp UNDER         &kp TILDE          &kp PLUS        &kp KP_EQUAL     &trans                        &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &kp MINUS         &kp UNDER          &kp DELETE      &kp POUND        &kp AT        &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &kp SLASH         &kp TILDE          &kp PLUS        &kp KP_EQUAL     &trans                        &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans            &trans             &trans          &trans                         &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
@@ -206,11 +206,11 @@
 
         BI_MACRO {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans                  &trans            &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &vscode_unfold_recurse  &replace          &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &google_doc_heading   &vscode_unfold          &vs_code_foldall  &vscode_unfoldall  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &vscode_newterminal   &trans                  &refactor         &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans                  &trans            &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans    &trans      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &trans    &replace    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &google_doc_heading   &replace  &print_scr  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &vscode_newterminal   &trans    &trans      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans    &trans      &trans  &trans  &trans
             >;
         };
     };
