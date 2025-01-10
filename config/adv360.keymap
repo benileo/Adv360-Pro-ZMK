@@ -220,11 +220,11 @@
 
         BI_MACRO {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans    &trans      &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &trans    &replace    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &google_doc_heading   &replace  &print_scr  &restart  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &vscode_newterminal   &trans    &trans      &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans    &trans      &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans             &trans            &trans          &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &vscode_unfoldall  &vs_code_foldall  &vscode_unfold  &vscode_unfold_recurse  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &google_doc_heading   &replace           &print_scr        &restart        &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &vscode_newterminal   &trans             &trans            &trans          &trans                  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans             &trans            &trans          &trans                  &trans
             >;
         };
     };
