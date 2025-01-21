@@ -173,6 +173,38 @@
 
             label = "RESTART";
         };
+
+        vscode_zoom: vscode_zoom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LG(KP_EQUAL)>;
+
+            label = "VSCODE_ZOOM";
+        };
+
+        vscode_zoom_out: vscode_zoom_out {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LG(KP_MINUS)>;
+
+            label = "VSCODE_ZOOM_OUT";
+        };
+
+        v_terminal_switch: v_terminal_switch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(LG(LEFT_BRACKET))>;
+
+            label = "V_TERMINAL_SWITCH";
+        };
+
+        v_terminal_switch_opp: v_terminal_switch_opp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(LG(RIGHT_BRACKET))>;
+
+            label = "V_TERMINAL_SWITCH_OPP";
+        };
     };
 
     keymap {
@@ -200,11 +232,11 @@
 
         layer_fn {
             bindings = <
-&kp F11  &kp F1            &kp F2             &kp F3          &kp F4           &kp F5        &tog 1                                      &mo 3   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
-&trans   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QUESTION  &none                                       &none   &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &kp MINUS         &kp UNDER          &kp DELETE      &kp POUND        &kp AT        &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &kp SLASH         &kp TILDE          &kp PLUS        &kp KP_EQUAL     &trans                        &trans      &trans                  &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans            &trans             &trans          &trans                         &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
+&kp F11  &kp F1            &kp F2             &kp F3          &kp F4           &kp F5        &tog 1                                                      &mo 3   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
+&trans   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QUESTION  &v_terminal_switch                                          &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &kp MINUS         &kp UNDER          &kp DELETE      &kp POUND        &kp DOLLAR    &v_terminal_switch_opp  &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &kp SLASH         &kp TILDE          &kp PLUS        &kp KP_EQUAL     &trans                                        &trans      &trans                  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans            &trans             &trans          &trans                         &trans                  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
             >;
         };
 
@@ -220,11 +252,11 @@
 
         BI_MACRO {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans             &trans            &trans          &trans                  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &slack_paste_snippet  &vscode_unfoldall  &vs_code_foldall  &vscode_unfold  &vscode_unfold_recurse  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &google_doc_heading   &replace           &print_scr        &restart        &trans                  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &vscode_newterminal   &trans             &trans            &trans          &trans                  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans             &trans            &trans          &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans            &trans                &trans             &trans            &trans          &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &vscode_zoom      &slack_paste_snippet  &vscode_unfoldall  &vs_code_foldall  &vscode_unfold  &vscode_unfold_recurse  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &vscode_zoom_out  &google_doc_heading   &replace           &print_scr        &restart        &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                            &vscode_newterminal   &trans             &trans            &trans          &trans                  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                                  &trans             &trans            &trans          &trans                  &trans
             >;
         };
     };
