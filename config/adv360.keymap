@@ -225,6 +225,14 @@
 
             label = "SCROLL_FAST_UP";
         };
+
+        vscode_back: vscode_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(MINUS)>;
+
+            label = "VSCODE_BACK";
+        };
     };
 
     keymap {
@@ -274,7 +282,7 @@
             bindings = <
 &trans  &trans            &trans             &trans          &trans           &trans        &print_scr                                                  &trans            &trans                &trans             &trans            &trans          &trans                  &trans
 &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QUESTION  &v_terminal_switch                                          &vscode_zoom      &slack_paste_snippet  &vscode_unfoldall  &vs_code_foldall  &vscode_unfold  &vscode_unfold_recurse  &trans
-&trans  &kp MINUS         &kp UNDER          &kp DELETE      &kp EQUAL        &kp PLUS      &v_terminal_switch_opp  &trans  &trans      &trans  &trans  &vscode_zoom_out  &google_doc_heading   &replace           &trans            &trans          &trans                  &trans
+&trans  &kp MINUS         &kp UNDER          &kp DELETE      &kp EQUAL        &kp PLUS      &v_terminal_switch_opp  &trans  &trans      &trans  &trans  &vscode_zoom_out  &google_doc_heading   &replace           &kp F12           &vscode_back    &trans                  &trans
 &trans  &scroll_fast_up   &scroll_fast_down  &kp UP_ARROW    &kp DOWN         &kp TILDE                                     &trans      &trans                            &vscode_newterminal   &trans             &trans            &trans          &trans                  &trans
 &trans  &trans            &trans             &trans          &trans                         &trans                  &trans  &trans      &trans  &trans  &trans                                  &trans             &trans            &trans          &trans                  &trans
             >;
