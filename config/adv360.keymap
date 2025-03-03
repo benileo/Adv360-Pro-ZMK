@@ -276,11 +276,11 @@
 
         BI_MACRO {
             bindings = <
-&trans  &trans            &kp F2             &trans          &trans           &kp F5        &print_scr                                                  &trans            &kp F10               &kp F11            &trans              &trans                  &trans           &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QUESTION  &v_terminal_switch                                          &vscode_zoom      &slack_paste_snippet  &vscode_unfoldall  &vs_code_foldall    &vscode_unfold_recurse  &trans           &trans
-&trans  &kp MINUS         &kp UNDER          &kp DELETE      &kp EQUAL        &kp PLUS      &v_terminal_switch_opp  &trans  &trans      &trans  &trans  &vscode_zoom_out  &google_doc_heading   &replace           &kp F12             &vscode_back            &vscode_forward  &trans
-&trans  &kp PAGE_UP       &kp PAGE_DOWN      &kp UP_ARROW    &kp DOWN         &kp TILDE                                     &trans      &trans                            &vscode_newterminal   &kp LS(F9)         &vscode_debug_test  &trans                  &trans           &trans
-&trans  &trans            &trans             &trans          &trans                         &trans                  &trans  &trans      &trans  &trans  &trans                                  &trans             &trans              &trans                  &trans           &trans
+&trans  &trans            &kp F2             &trans          &trans           &kp F5        &print_scr                                                  &trans            &kp F10               &kp F11            &trans            &trans                  &trans           &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QUESTION  &v_terminal_switch                                          &vscode_zoom      &slack_paste_snippet  &vscode_unfoldall  &vs_code_foldall  &vscode_unfold_recurse  &trans           &trans
+&trans  &kp MINUS         &kp UNDER          &kp DELETE      &kp EQUAL        &kp PLUS      &v_terminal_switch_opp  &trans  &trans      &trans  &trans  &vscode_zoom_out  &google_doc_heading   &replace           &kp F12           &vscode_back            &vscode_forward  &trans
+&trans  &trans            &trans             &trans          &trans           &kp TILDE                                     &trans      &trans                            &vscode_newterminal   &trans             &trans            &trans                  &trans           &trans
+&trans  &trans            &trans             &trans          &trans                         &trans                  &trans  &trans      &trans  &trans  &trans                                  &trans             &trans            &trans                  &trans           &trans
             >;
         };
     };
