@@ -244,11 +244,11 @@
 
         default_layer {
             bindings = <
-&zoomunmute  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                                &mo 3          &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB      &kp Q      &kp W     &kp E     &kp R      &kp T   &kp LC(UP_ARROW)                                                                      &print_scr     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSLH
-&kp ESC      &kp A      &kp S     &kp D     &lt 5 F    &kp G   &kp LC(LEFT)      &kp LGUI     &kp LALT               &kp RCTRL      &kp RGUI         &kp LC(RIGHT)  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT    &kp Z      &kp X     &kp C     &kp V      &kp B                                  &mt HOME LG(LEFT)      &lt 4 PAGE_UP                                  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-&mo 2        &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC          &lt 4 ENTER  &mt END LG(RIGHT)      &kp PG_DN      &kp RIGHT_SHIFT  &lt 4 SPACE            &kp UP  &kp DOWN   &kp Z    &kp Z     &mo 2
+&zoomunmute  &kp N1     &kp N2              &kp N3              &kp N4                &kp N5                &tog 1                                                                                &mo 3          &kp N6                &kp N7                &kp N8              &kp N9              &kp N0    &kp MINUS
+&kp TAB      &kp Q      &mt LC(LEFT_ALT) W  &mt LG(LEFT_ALT) E  &mt LC(LEFT_SHIFT) R  &mt LG(LEFT_SHIFT) T  &kp LC(UP_ARROW)                                                                      &print_scr     &mt LG(LEFT_SHIFT) Y  &mt LC(LEFT_SHIFT) U  &mt LG(LEFT_ALT) I  &mt LC(LEFT_ALT) O  &kp P     &kp BSLH
+&kp ESC      &kp A      &kp S               &kp D               &kp F                 &kp G                 &kp LC(LEFT)      &kp LGUI     &kp LALT               &kp RCTRL      &kp RGUI         &kp LC(RIGHT)  &kp H                 &lt 6 J               &lt 5 K             &kp L               &kp SEMI  &kp SQT
+&kp LSHFT    &kp Z      &kp X               &kp C               &kp V                 &kp B                                                &mt HOME LG(LEFT)      &lt 4 PAGE_UP                                  &lt 7 N               &kp M                 &kp COMMA           &kp DOT             &kp FSLH  &kp RIGHT_SHIFT
+&mo 2        &kp GRAVE  &kp CAPS            &kp LEFT            &kp RIGHT                                   &kp BSPC          &lt 4 ENTER  &mt END LG(RIGHT)      &kp PG_DN      &kp RIGHT_SHIFT  &lt 4 SPACE                          &kp UP                &kp DOWN            &kp Z               &kp Z     &mo 2
             >;
         };
 
@@ -284,21 +284,41 @@
 
         BI_MACRO {
             bindings = <
-&kp LC(F2)  &trans            &trans             &kp LS(LG(SPACE))  &trans           &trans        &print_scr                                                            &trans            &trans                &trans             &trans            &trans                  &trans           &trans
-&trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp QUESTION  &v_terminal_switch                                                    &vscode_zoom      &slack_paste_snippet  &vscode_unfoldall  &vs_code_foldall  &vscode_unfold_recurse  &vscode_unfold   &trans
-&trans      &kp MINUS         &kp UNDER          &kp SLASH          &kp EQUAL        &kp PLUS      &v_terminal_switch_opp  &kp LA(LG(B))     &trans      &trans  &trans  &vscode_zoom_out  &google_doc_heading   &replace           &kp F12           &vscode_back            &vscode_forward  &trans
-&trans      &kp HOME          &kp END            &kp PAGE_DOWN      &kp PAGE_UP      &kp TILDE                                               &trans      &trans                            &vscode_newterminal   &trans             &kp LS(F12)       &trans                  &trans           &trans
-&trans      &trans            &trans             &trans             &trans                         &kp LG(LS(I))           &kp LG(NUMBER_1)  &trans      &trans  &trans  &trans                                  &trans             &trans            &trans                  &trans           &trans
+&kp LC(F2)  &trans            &trans             &trans          &trans           &trans        &print_scr                                                            &trans            &trans                &trans             &trans            &trans                  &trans           &trans
+&trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QUESTION  &v_terminal_switch                                                    &vscode_zoom      &slack_paste_snippet  &vscode_unfoldall  &vs_code_foldall  &vscode_unfold_recurse  &vscode_unfold   &trans
+&trans      &kp MINUS         &kp UNDER          &kp SLASH       &kp EQUAL        &kp PLUS      &v_terminal_switch_opp  &kp LA(LG(B))     &trans      &trans  &trans  &vscode_zoom_out  &google_doc_heading   &replace           &kp F12           &vscode_back            &vscode_forward  &trans
+&trans      &trans            &trans             &trans          &trans           &kp TILDE                                               &trans      &trans                            &vscode_newterminal   &kp LG(LS(SPACE))  &kp LS(F12)       &trans                  &trans           &trans
+&trans      &trans            &trans             &trans          &trans                         &kp LG(LS(I))           &kp LG(NUMBER_1)  &trans      &trans  &trans  &trans                                  &trans             &trans            &trans                  &trans           &trans
             >;
         };
 
         FN_BI {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans   &trans   &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp F11  &kp F12  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans           &trans   &trans  &trans  &trans   &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans  &trans                                      &trans  &trans   &trans   &trans  &trans  &trans   &trans
+&trans  &kp F5   &kp F6   &kp F7  &kp F8  &kp F9  &trans                                      &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans
+&trans  &kp F10  &kp F1   &kp F2  &kp F3  &kp F4  &trans  &trans  &trans      &trans  &trans  &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans
+&trans  &trans   &trans   &trans  &trans  &trans                  &trans      &trans                  &kp F11  &kp F12  &trans  &trans  &trans   &trans
+&trans  &trans   &trans   &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans           &trans   &trans  &trans  &trans   &trans
+            >;
+        };
+
+        nav_layer {
+            bindings = <
+&trans  &trans            &trans         &trans              &trans         &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PAGE_UP       &kp PAGE_DOWN  &kp LA(LEFT)        &kp LA(RIGHT)  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp UP_ARROW      &kp DOWN       &kp LEFT            &kp RIGHT      &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(UP_ARROW)  &kp LG(DOWN)   &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans         &trans              &trans                 &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        bi_num {
+            bindings = <
+&trans  &trans           &trans           &trans           &trans           &trans           &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans           &trans           &trans           &trans                           &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans           &trans           &trans                            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
