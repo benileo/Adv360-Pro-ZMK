@@ -292,11 +292,11 @@
 
         BI_MACRO {
             bindings = <
-&kp LC(F2)  &trans               &trans                 &trans          &trans           &trans        &print_scr                                                               &trans            &trans               &trans             &trans            &trans                  &trans           &trans
-&trans      &kp LEFT_BRACKET     &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QUESTION  &v_terminal_switch                                                       &vscode_zoom      &trans               &vscode_unfoldall  &vs_code_foldall  &vscode_unfold_recurse  &vscode_unfold   &trans
-&trans      &kp MINUS            &kp UNDER              &kp SLASH       &kp EQUAL        &kp PLUS      &v_terminal_switch_opp  &kp LA(LG(B))     &trans         &trans  &trans  &vscode_zoom_out  &google_doc_heading  &replace           &kp F12           &vscode_back            &vscode_forward  &trans
-&trans      &kp LC(LS(PAGE_UP))  &kp LC(LS(PAGE_DOWN))  &kp LG(PLUS)    &kp LG(MINUS)    &kp TILDE                                               &trans         &trans                            &vscode_newterminal  &kp LG(LS(SPACE))  &kp LS(F12)       &trans                  &trans           &trans
-&trans      &trans               &trans                 &trans          &trans                         &kp LG(LS(I))           &kp LG(NUMBER_1)  &kp LA(W)      &trans  &trans  &trans                                 &trans             &trans            &trans                  &trans           &trans
+&kp LC(F2)  &trans               &trans                 &trans          &trans           &trans        &print_scr                                                            &trans            &trans               &trans             &trans            &trans                  &trans           &trans
+&trans      &kp LEFT_BRACKET     &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QUESTION  &v_terminal_switch                                                    &vscode_zoom      &trans               &vscode_unfoldall  &vs_code_foldall  &vscode_unfold_recurse  &vscode_unfold   &trans
+&trans      &kp MINUS            &kp UNDER              &kp SLASH       &kp EQUAL        &kp PLUS      &v_terminal_switch_opp  &kp LA(LG(B))     &trans      &trans  &trans  &vscode_zoom_out  &trans               &replace           &kp F12           &vscode_back            &vscode_forward  &trans
+&trans      &kp LC(LS(PAGE_UP))  &kp LC(LS(PAGE_DOWN))  &kp LG(PLUS)    &kp LG(MINUS)    &kp TILDE                                               &trans      &trans                            &vscode_newterminal  &kp LG(LS(SPACE))  &kp LS(F12)       &trans                  &trans           &trans
+&trans      &trans               &trans                 &trans          &trans                         &kp LG(LS(I))           &kp LG(NUMBER_1)  &trans      &trans  &trans  &trans                                 &trans             &trans            &trans                  &trans           &trans
             >;
         };
 
@@ -342,11 +342,11 @@
 
         google_doc {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans                &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans                &kp LA(W)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LA(NUMBER_2))  &kp LG(LA(NUMBER_3))  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp LG(LA(NUMBER_0))  &kp LG(LA(M))         &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans                &trans     &trans  &trans  &trans
             >;
         };
     };
