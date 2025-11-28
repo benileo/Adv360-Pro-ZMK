@@ -343,8 +343,8 @@
         google_doc {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans                &trans         &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans                &kp LA(W)      &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LA(NUMBER_2))  &kp LG(LA(NUMBER_3))  &kp LG(LA(M))  &kp LG(LS(O))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans                &kp LA(W)      &kp LS(LG(O))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LA(NUMBER_2))  &kp LG(LA(NUMBER_3))  &kp LG(LA(M))  &trans         &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp LG(LA(NUMBER_0))  &kp LG(LS(S))         &trans         &trans         &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans                &trans         &trans         &trans  &trans
             >;
