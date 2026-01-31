@@ -254,6 +254,11 @@
             bindings = <&kp TAB>;
             key-positions = <41 42>;
         };
+
+        shifttab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <42 43>;
+        };
     };
 
     keymap {
@@ -301,21 +306,21 @@
 
         BI_MACRO {
             bindings = <
-&kp LC(F2)  &trans            &trans             &trans            &trans             &trans        &print_scr                                                  &trans  &trans               &trans             &trans            &trans                  &trans           &trans
-&trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp QUESTION  &v_terminal_switch                                          &trans  &trans               &vscode_unfoldall  &vs_code_foldall  &vscode_unfold_recurse  &vscode_unfold   &trans
-&trans      &kp MINUS         &kp UNDER          &kp SLASH         &kp EQUAL          &kp PLUS      &v_terminal_switch_opp  &trans  &trans      &trans  &trans  &trans  &trans               &replace           &kp F12           &vscode_back            &vscode_forward  &trans
-&trans      &trans            &trans             &kp LG(PLUS)      &kp LG(MINUS)      &kp TILDE                                     &trans      &trans                  &vscode_newterminal  &trans             &kp LS(F12)       &trans                  &trans           &trans
-&trans      &trans            &trans             &kp LA(LG(LEFT))  &kp LG(LA(RIGHT))                &kp LA(LG(N7))          &kp F5  &trans      &trans  &trans  &trans                       &trans             &trans            &trans                  &trans           &trans
+&kp LC(F2)  &trans            &trans             &trans          &trans           &trans        &trans                                                      &trans  &trans               &trans             &trans            &trans                  &trans           &trans
+&trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QUESTION  &v_terminal_switch                                          &trans  &trans               &vscode_unfoldall  &vs_code_foldall  &vscode_unfold_recurse  &vscode_unfold   &trans
+&trans      &kp MINUS         &kp UNDER          &kp SLASH       &kp EQUAL        &kp PLUS      &v_terminal_switch_opp  &trans  &trans      &trans  &trans  &trans  &trans               &replace           &kp F12           &vscode_back            &vscode_forward  &trans
+&trans      &trans            &trans             &kp LG(PLUS)    &kp LG(MINUS)    &kp TILDE                                     &trans      &trans                  &vscode_newterminal  &trans             &kp LS(F12)       &trans                  &trans           &trans
+&trans      &trans            &trans             &trans          &trans                         &kp LA(LG(N7))          &kp F5  &trans      &trans  &trans  &trans                       &trans             &trans            &trans                  &trans           &trans
             >;
         };
 
         nav_layer {
             bindings = <
-&trans  &trans            &trans         &trans              &trans         &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PAGE_UP       &kp PAGE_DOWN  &kp LA(LEFT)        &kp LA(RIGHT)  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp UP_ARROW      &kp DOWN       &kp LEFT            &kp RIGHT      &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(UP_ARROW)  &kp LG(DOWN)   &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans         &trans              &trans                 &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans         &trans              &trans         &trans  &trans                                      &trans  &trans  &trans              &trans                  &trans  &trans  &trans
+&trans  &kp PAGE_UP       &kp PAGE_DOWN  &kp LA(LEFT)        &kp LA(RIGHT)  &trans  &trans                                      &trans  &trans  &trans              &trans                  &trans  &trans  &trans
+&trans  &kp UP_ARROW      &kp DOWN       &kp LEFT            &kp RIGHT      &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &v_terminal_switch  &v_terminal_switch_opp  &trans  &trans  &trans
+&trans  &kp LG(UP_ARROW)  &kp LG(DOWN)   &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &trans                  &trans      &trans                  &trans  &trans              &trans                  &trans  &trans  &trans
+&trans  &trans            &trans         &trans              &trans                 &trans  &trans  &trans      &trans  &trans  &trans          &trans              &trans                  &trans  &trans  &trans
             >;
         };
 
