@@ -254,7 +254,7 @@
             bindings = <
 &kp LG(D)         &kp N1     &kp N2            &kp N3    &kp N4     &kp N5  &tog 1                                                                               &mo 3          &kp N6  &kp N7   &kp N8     &kp N9   &kp N0    &kp LC(LG(H))
 &kp TAB           &kp Q      &kp W             &kp E     &kp R      &kp T   &kp LS(LC(TAB))                                                                      &kp LC(TAB)    &kp Y   &kp U    &kp I      &kp O    &kp P     &kp BSLH
-&kp ESC           &kp A      &lt 8 S           &lt 9 D   &lt 5 F    &kp G   &kp LC(LEFT)     &kp LGUI     &kp LALT               &kp RCTRL      &kp RGUI         &kp LC(RIGHT)  &kp H   &lt 6 J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp ESC           &kp A      &lt 7 S           &lt 0 D   &lt 5 F    &kp G   &kp LC(LEFT)     &kp LGUI     &kp LALT               &kp RCTRL      &kp RGUI         &kp LC(RIGHT)  &kp H   &lt 6 J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z      &kp X             &kp C     &kp V      &kp B                                 &mt HOME LG(LEFT)      &lt 4 PAGE_UP                                  &kp N   &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
 &kp LC(UP_ARROW)  &kp GRAVE  &kp LC(UP_ARROW)  &kp LEFT  &kp RIGHT          &kp BSPC         &lt 4 ENTER  &mt END LG(RIGHT)      &kp PG_DN      &kp RIGHT_SHIFT  &lt 4 SPACE            &kp UP   &kp DOWN   &kp Z    &kp Z     &print_scr
             >;
@@ -320,16 +320,6 @@
             >;
         };
 
-        bi_num {
-            bindings = <
-&trans  &trans           &trans           &trans           &trans           &trans           &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans           &trans           &trans           &trans                           &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans           &trans           &trans                            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
         slack_nav {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans                  &trans                 &trans                &trans             &trans
@@ -340,13 +330,13 @@
             >;
         };
 
-        browser {
+        AILayer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans                &trans                 &trans         &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp LS(LC(PAGE_UP))   &kp LS(LC(PAGE_DOWN))  &trans         &kp LS(LG(O))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LA(NUMBER_2))  &kp LG(LA(NUMBER_3))   &kp LG(LA(M))  &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp LG(LA(NUMBER_0))  &kp LG(LS(S))          &trans         &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &trans                 &trans         &trans         &trans  &trans
+&trans  &trans     &trans         &trans            &trans             &trans            &trans                                      &trans  &trans  &trans     &trans         &trans         &trans  &trans
+&trans  &trans     &trans         &trans            &trans             &trans            &trans                                      &trans  &trans  &trans     &trans         &trans         &trans  &trans
+&trans  &kp LG(B)  &kp LG(LS(E))  &kp LG(NUMBER_1)  &kp LA(LG(RIGHT))  &kp LG(LA(LEFT))  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LG(J)  &kp LG(LA(B))  &kp LG(LA(S))  &trans  &trans
+&trans  &trans     &trans         &trans            &trans             &trans                            &trans      &trans                  &trans  &trans     &trans         &trans         &trans  &trans
+&trans  &trans     &trans         &trans            &trans                               &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans         &trans         &trans  &trans
             >;
         };
     };
