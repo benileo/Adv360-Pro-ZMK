@@ -332,11 +332,11 @@
 
         AILayer {
             bindings = <
-&trans  &trans     &trans         &trans            &trans             &trans            &trans                                      &trans  &trans  &trans     &trans         &trans         &trans  &trans
-&trans  &trans     &trans         &trans            &trans             &trans            &trans                                      &trans  &trans  &trans     &trans         &trans         &trans  &trans
-&trans  &kp LG(B)  &kp LG(LS(E))  &kp LG(NUMBER_1)  &kp LA(LG(RIGHT))  &kp LG(LA(LEFT))  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LG(J)  &kp LG(LA(B))  &kp LG(LA(S))  &trans  &trans
-&trans  &trans     &trans         &trans            &trans             &trans                            &trans      &trans                  &trans  &trans     &trans         &trans         &trans  &trans
-&trans  &trans     &trans         &trans            &trans                               &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans         &trans         &trans  &trans
+&trans  &trans     &trans         &trans            &trans             &trans            &trans                                      &trans  &trans         &trans     &trans         &trans         &trans     &trans
+&trans  &trans     &trans         &trans            &trans             &trans            &trans                                      &trans  &trans         &trans     &trans         &trans         &trans     &trans
+&trans  &kp LG(B)  &kp LG(LS(E))  &kp LG(NUMBER_1)  &kp LA(LG(RIGHT))  &kp LG(LA(LEFT))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LC(GRAVE)  &kp LG(J)  &kp LG(LA(B))  &kp LG(LA(S))  &kp LG(L)  &trans
+&trans  &trans     &trans         &trans            &trans             &trans                            &trans      &trans                  &trans         &trans     &trans         &trans         &trans     &trans
+&trans  &trans     &trans         &trans            &trans                               &trans  &trans  &trans      &trans  &trans  &trans                 &trans     &trans         &trans         &trans     &trans
             >;
         };
     };
