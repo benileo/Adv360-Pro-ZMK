@@ -254,7 +254,7 @@
             bindings = <
 &kp LG(D)         &kp N1     &kp N2            &kp N3    &kp N4     &kp N5  &tog 1                                                                               &mo 3          &kp N6  &kp N7   &kp N8     &kp N9   &kp N0    &kp LC(LG(H))
 &kp TAB           &kp Q      &kp W             &kp E     &kp R      &kp T   &kp LS(LC(TAB))                                                                      &kp LC(TAB)    &kp Y   &kp U    &kp I      &kp O    &kp P     &kp BSLH
-&kp ESC           &kp A      &lt 7 S           &lt 0 D   &lt 5 F    &kp G   &kp LC(LEFT)     &kp LGUI     &kp LALT               &kp RCTRL      &kp RGUI         &kp LC(RIGHT)  &kp H   &lt 6 J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp ESC           &kp A      &lt 7 S           &kp D     &lt 8 F    &kp G   &kp LC(LEFT)     &kp LGUI     &kp LALT               &kp RCTRL      &kp RGUI         &kp LC(RIGHT)  &kp H   &lt 8 J  &lt 6 K    &kp L    &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z      &kp X             &kp C     &kp V      &kp B                                 &mt HOME LG(LEFT)      &lt 4 PAGE_UP                                  &kp N   &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
 &kp LC(UP_ARROW)  &kp GRAVE  &kp LC(UP_ARROW)  &kp LEFT  &kp RIGHT          &kp BSPC         &lt 4 ENTER  &mt END LG(RIGHT)      &kp PG_DN      &kp RIGHT_SHIFT  &lt 4 SPACE            &kp UP   &kp DOWN   &kp Z    &kp Z     &print_scr
             >;
@@ -292,11 +292,11 @@
 
         BI_MACRO {
             bindings = <
-&kp LC(F2)  &trans            &trans             &trans            &trans             &trans        &print_scr                                                                   &trans  &trans               &trans             &trans            &trans                  &trans           &trans
-&trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp QUESTION  &v_terminal_switch                                                           &trans  &trans               &vscode_unfoldall  &vs_code_foldall  &vscode_unfold_recurse  &vscode_unfold   &trans
-&trans      &kp MINUS         &kp UNDER          &kp SLASH         &kp EQUAL          &kp PLUS      &v_terminal_switch_opp  &kp LA(LG(B))     &kp LA(LG(S))      &trans  &trans  &trans  &trans               &replace           &kp F12           &vscode_back            &vscode_forward  &trans
-&trans      &trans            &trans             &kp LG(PLUS)      &kp LG(MINUS)      &kp TILDE                                               &trans             &trans                  &vscode_newterminal  &trans             &kp LS(F12)       &trans                  &trans           &trans
-&trans      &trans            &trans             &kp LA(LG(LEFT))  &kp LG(LA(RIGHT))                &kp LA(LG(N7))          &kp LG(NUMBER_1)  &trans             &trans  &trans  &trans                       &trans             &trans            &trans                  &trans           &trans
+&kp LC(F2)  &trans            &trans             &trans            &trans             &trans        &print_scr                                                  &trans  &trans               &trans             &trans            &trans                  &trans           &trans
+&trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp QUESTION  &v_terminal_switch                                          &trans  &trans               &vscode_unfoldall  &vs_code_foldall  &vscode_unfold_recurse  &vscode_unfold   &trans
+&trans      &kp MINUS         &kp UNDER          &kp SLASH         &kp EQUAL          &kp PLUS      &v_terminal_switch_opp  &trans  &trans      &trans  &trans  &trans  &trans               &replace           &kp F12           &vscode_back            &vscode_forward  &trans
+&trans      &trans            &trans             &kp LG(PLUS)      &kp LG(MINUS)      &kp TILDE                                     &trans      &trans                  &vscode_newterminal  &trans             &kp LS(F12)       &trans                  &trans           &trans
+&trans      &trans            &trans             &kp LA(LG(LEFT))  &kp LG(LA(RIGHT))                &kp LA(LG(N7))          &trans  &trans      &trans  &trans  &trans                       &trans             &trans            &trans                  &trans           &trans
             >;
         };
 
