@@ -316,11 +316,11 @@
 
         nav_layer {
             bindings = <
-&trans  &trans            &trans         &trans              &trans         &trans  &trans                                      &trans  &trans  &trans              &trans                  &trans  &trans  &trans
-&trans  &kp PAGE_UP       &kp PAGE_DOWN  &kp LA(LEFT)        &kp LA(RIGHT)  &trans  &trans                                      &trans  &trans  &trans              &trans                  &trans  &trans  &trans
-&trans  &kp UP_ARROW      &kp DOWN       &kp LEFT            &kp RIGHT      &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &v_terminal_switch  &v_terminal_switch_opp  &trans  &trans  &trans
-&trans  &kp LG(UP_ARROW)  &kp LG(DOWN)   &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &trans                  &trans      &trans                  &trans  &trans              &trans                  &trans  &trans  &trans
-&trans  &trans            &trans         &trans              &trans                 &trans  &trans  &trans      &trans  &trans  &trans          &trans              &trans                  &trans  &trans  &trans
+&trans  &trans            &trans         &trans              &trans         &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PAGE_UP       &kp PAGE_DOWN  &kp LA(LEFT)        &kp LA(RIGHT)  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp UP_ARROW      &kp DOWN       &kp LEFT            &kp RIGHT      &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(UP_ARROW)  &kp LG(DOWN)   &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans         &trans              &trans                 &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
