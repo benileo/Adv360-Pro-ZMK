@@ -259,8 +259,8 @@
         default_layer {
             bindings = <
 &kp LG(D)         &kp N1       &kp N2            &kp N3    &kp N4     &kp N5  &tog 1                                                                                &mo 3              &kp N6  &kp N7   &kp N8     &kp N9   &kp N0          &kp LC(LG(H))
-&kp TAB           &kp Q        &kp W             &kp E     &kp R      &kp T   &kp LA(LG(LEFT))                                                                      &kp LA(LG(RIGHT))  &kp Y   &kp U    &kp I      &kp O    &kp P           &kp BSLH
-&kp ESC           &kp A        &lt 6 S           &lt 5 D   &lt 7 F    &kp G   &none             &kp LGUI     &kp LALT               &kp RCTRL      &kp RGUI         &none              &kp H   &lt 7 J  &lt 5 K    &kp L    &kp SEMI        &kp SQT
+&kp TAB           &kp Q        &kp W             &kp E     &kp R      &kp T   &kp LC(LA(LG(S)))                                                                      &kp LC(LA(LG(V)))  &kp Y   &kp U    &kp I      &kp O    &kp P           &kp BSLH
+&kp ESC           &kp A        &lt 6 S           &lt 5 D   &lt 7 F    &kp G   &kp LC(LA(LG(G)))             &kp LGUI     &kp LALT               &kp RCTRL      &kp RGUI         &kp LC(LA(LG(C)))              &kp H   &lt 7 J  &lt 5 K    &kp L    &kp SEMI        &kp SQT
 &kp LSHFT         &hm LCTRL Z  &kp X             &kp C     &kp V      &kp B                                  &mt HOME LG(LEFT)      &lt 4 PAGE_UP                                      &kp N   &kp M    &kp COMMA  &kp DOT  &hm RCTRL FSLH  &kp RIGHT_SHIFT
 &kp LC(UP_ARROW)  &kp GRAVE    &kp LC(UP_ARROW)  &kp LEFT  &kp RIGHT          &kp BSPC          &lt 4 ENTER  &mt END LG(RIGHT)      &kp PG_DN      &kp RIGHT_SHIFT  &lt 4 SPACE                &kp UP   &kp DOWN   &kp Z    &kp Z           &print_scr
             >;
@@ -330,7 +330,7 @@
             bindings = <
 &trans  &trans     &trans         &trans            &trans            &trans  &trans                                      &trans  &trans  &trans       &trans                   &trans                   &trans                   &trans
 &trans  &trans     &trans         &trans            &trans            &trans  &trans                                      &trans  &trans  &trans       &trans                   &trans                   &trans                   &trans
-&trans  &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LC(LA(LG(G)))  &kp LC(LA(LG(C)))  &kp LC(LA(LG(S)))  &kp LC(LA(LG(V)))  &trans
+&trans  &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans         &trans            &trans            &trans                  &trans      &trans                  &trans  &trans       &trans                   &trans                   &trans                   &trans
 &trans  &trans     &trans         &trans            &trans                    &trans  &trans  &trans      &trans  &trans  &trans          &trans       &trans                   &trans                   &trans                   &trans
             >;
