@@ -330,7 +330,7 @@
             bindings = <
 &trans  &trans     &trans         &trans            &trans            &trans  &trans                                      &trans  &trans  &trans       &trans                   &trans                   &trans                   &trans
 &trans  &trans     &trans         &trans            &trans            &trans  &trans                                      &trans  &trans  &trans       &trans                   &trans                   &trans                   &trans
-&trans  &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &kp LA(LG(UP))  &kp LA(LG(DOWN))  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans         &trans            &trans            &trans                  &trans      &trans                  &trans  &trans       &trans                   &trans                   &trans                   &trans
 &trans  &trans     &trans         &trans            &trans                    &trans  &trans  &trans      &trans  &trans  &trans          &trans       &trans                   &trans                   &trans                   &trans
             >;
